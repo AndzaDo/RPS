@@ -12,12 +12,16 @@ var zaud = 0;
 
 </script>
 <style>
+ 
 .container {
   max-width: 960px;
   padding:0 15px;
   height: auto;
   position: relative;
   clear: both;
+  top: 32%;
+  left: 32%;
+  margin: -70px 0 0 -170px;
 }
 .box{
     display: flex;
@@ -50,6 +54,7 @@ float: left;
     position: absolute;
     bottom: 0;
     background: none;
+    margin-left: 10%;
 }
 .play-rock{
     font-size: 100px; 
@@ -60,15 +65,26 @@ float: left;
 .play-scissors{
     font-size: 100px;
 }
+.player{
+    font-size: 170px;
+    margin-left: 30%; 
+}
+.pc{
+    font-size: 170px;
+    margin-left: 30%; 
+}
 
 
 </style>
+
 <div class="container">
 <div class="box3"> <!----Punkti-->
 <p>0:0</p>
 </div>
 
 <div class="box-1"> <!----Spēlētājs-->
+    <pl class="player">✊</pl>
+    
     <div class="btt">
         <button class="play-rock" type="button" style="border:none; background: none" onclick="play('rock')">✊</button>
         <button class="play-paper" type="button" style="border:none; background: none" onclick="play('paper')">✋</button>
@@ -76,9 +92,10 @@ float: left;
     </div>
 </div>
 <div class="box-2"> <!----Dators-->
-<p>eeeeee jooo</p>
+<pl class="pc">✋</pl>
 </div>
 </div>
+
 
 </body>
 </html>
