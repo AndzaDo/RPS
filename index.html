@@ -13,45 +13,69 @@ var zaud = 0;
 </script>
 <style>
 .container {
-        display: flex;
-  flex-flow: row wrap;
+  max-width: 960px;
+  padding:0 15px;
+  height: auto;
+  position: relative;
+  clear: both;
 }
-.container > * {
-    flex: 1 100%;
+.box{
+    display: flex;
 }
-.container-3{
- background-color: grey;
+.box3{
+    text-align: center;
+    position: relative;
+    height: 100px;
+    background-color: grey;
+    width: 100%;
+    display: block;
     }
 .box-1{
+    position: relative;
+    height: 400px;
     background-color: skyblue;
+    width: 50%;
+    float: left;
 }
 
 .box-2 {
+
+position: relative;
+height: 400px;
 background-color: lightblue;
+width: 50%;
+float: left;
+}
+.btt{
+    position: absolute;
+    bottom: 0;
+    background: none;
+}
+.play-rock{
+    font-size: 100px; 
+}
+.play-paper{
+    font-size: 100px;
+}
+.play-scissors{
+    font-size: 100px;
 }
 
 
-@media all and (min-width: 600px) {
-
-  .aside { flex: 1 auto; }
-}
-
-@media all and (min-width: 800px) {
-  .container1 { order: 1; }
-  .container2 { order: 3;}
-}
 </style>
 <div class="container">
-<div class="container-3">
+<div class="box3"> <!----Punkti-->
 <p>0:0</p>
 </div>
 
-<div class="box-1">
-        <button class="play rock" type="button" onclick="play('rock')">rock</button>
-        <button class="play paper" type="button" onclick="play('paper')">paper</button>
-        <button class="play scissors" type="button" onclick="play('scissors')">scissors</button>
+<div class="box-1"> <!----Spēlētājs-->
+    <div class="btt">
+        <button class="play-rock" type="button" style="border:none; background: none" onclick="play('rock')">✊</button>
+        <button class="play-paper" type="button" style="border:none; background: none" onclick="play('paper')">✋</button>
+        <button class="play-scissors" type="button" style="border:none; background: none" onclick="play('scissors')">✌️</button>
+    </div>
 </div>
-<div class="box-2">
+<div class="box-2"> <!----Dators-->
 <p>eeeeee jooo</p>
 </div>
 </div>
