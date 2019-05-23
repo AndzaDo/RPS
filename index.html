@@ -1,0 +1,60 @@
+<html>
+<head>
+
+</head>
+
+<body>
+<script>
+
+var uzvar = 0;
+var zaud = 0;
+
+
+</script>
+<style>
+.container {
+        display: flex;
+  flex-flow: row wrap;
+}
+.container > * {
+    flex: 1 100%;
+}
+.container-3{
+ background-color: grey;
+    }
+.box-1{
+    background-color: skyblue;
+}
+
+.box-2 {
+background-color: lightblue;
+}
+
+
+@media all and (min-width: 600px) {
+
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .container1 { order: 1; }
+  .container2 { order: 3;}
+}
+</style>
+<div class="container">
+<div class="container-3">
+<p>0:0</p>
+</div>
+
+<div class="box-1">
+        <button class="play rock" type="button" onclick="play('rock')">rock</button>
+        <button class="play paper" type="button" onclick="play('paper')">paper</button>
+        <button class="play scissors" type="button" onclick="play('scissors')">scissors</button>
+</div>
+<div class="box-2">
+<p>eeeeee jooo</p>
+</div>
+</div>
+
+</body>
+</html>
